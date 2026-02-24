@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.container{
+    width: 100%;
+    height: fit-content;
+}
+div.container > nav{
+    width: 100%;
+    background-color:orangered;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+div.container > nav > button{
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: none;
+}
+div.container > nav > button:hover{
+
+}
