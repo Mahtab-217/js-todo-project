@@ -29,10 +29,11 @@ div.container > nav > button:hover{
  text-shadow: 3px 3px 10px;
     
 }
+
 div.container > div.container-modal{
     height: 100vh;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -66,4 +67,7 @@ form > button{
 }
 form >button:hover{
     transform: translateY(-3px);
+}
+div.container > div.toggleForm{
+    display: flex;
 }
