@@ -30,6 +30,15 @@ function saveTodo(){
     containerModal.classList.remove("toggleForm");
     addButton.textContent = "Add Todo";
    }
-   
-   console.log(todoList)
+   showTodo()
+}
+function showTodo(){
+for(let todo of todoList){
+ parent.innerHTML="";
+ const div= document.createElement("div");
+ const h1 = document.createElement("h1");
+ h1.textContent= todo.todo;
+    div.append(h1);
+    parent.append(div);
+}
 }
