@@ -1,4 +1,4 @@
-const parent=document.getElementById("container");
+const parent=document.getElementById("parent");
 const addButton=document.getElementById("addBtn");
 const containerModal=document.getElementById("container-modal");
 const saveBtn=document.getElementById("saveBtn");
@@ -30,7 +30,7 @@ function saveTodo(){
     containerModal.classList.remove("toggleForm");
     addButton.textContent = "Add Todo";
    }
-   showTodo()
+   showTodo();
 }
 function showTodo(){
 for(let todo of todoList){

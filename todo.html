@@ -8,16 +8,16 @@
     <script src="todo.js" defer></script>
 </head>
 <body>
+    <nav>
+        <h1>Todo App</h1>
+        <button id="addBtn">Add Todo</button>
+    </nav>
     <div class="container" id="container">
-        <nav>
-            <h1>Todo App</h1>
-            <button id="addBtn">Add Todo</button>
-        </nav>
         <div class="container-modal" id="container-modal">
         <div class="modal">
             <h1>Add Todo</h1>
             <form action="">
-                <input type="text" id="todo">
+                <input type="text" id="todo" placeholder="Enter your todo">
                 <select name="" id="importance">
                     <option value="important">Important</option>
                     <option value="normal">Normal</option>
@@ -27,6 +27,7 @@
             </form>
         </div>
         </div>
+        <div id="parent"></div>
     </div>
 </body>
 </html>
