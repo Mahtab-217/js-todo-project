@@ -20,9 +20,16 @@ saveTodo();
 function saveTodo(){
    const todo= document.getElementById("todo").value;
    const importance= document.getElementById("importance").value;
-   todo.push({
+   todoList.push({
     todo,
     importance,
    });
-   console.log("todoList")
+   document.getElementById("todo").value=""
+   document.getElementById("importance").value=""
+   if(containerModal.classList.contains("toggleForm")){
+    containerModal.classList.remove("toggleForm");
+    addButton.textContent = "Add Todo";
+   }
+   
+   console.log(todoList)
 }
