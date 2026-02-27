@@ -16,6 +16,8 @@ addButton.addEventListener("click",()=>{
 saveBtn.addEventListener("click",(e)=>{
 e.preventDefault();
 saveTodo();
+parent.innerHTML="";
+showTodo();
 });
 function saveTodo(){
    const todo= document.getElementById("todo").value;
@@ -30,12 +32,14 @@ function saveTodo(){
     containerModal.classList.remove("toggleForm");
     addButton.textContent = "Add Todo";
    }
-   showTodo();
+//    showTodo()
+// console.log(todo, importance)
 }
 function showTodo(){
 for(let todo of todoList){
- parent.innerHTML="";
+ 
  const div= document.createElement("div");
+ div.classList.add("box")
  const h1 = document.createElement("h1");
  h1.textContent= todo.todo;
     div.append(h1);
