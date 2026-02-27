@@ -42,7 +42,9 @@ for(let todo of todoList){
  div.classList.add("box")
  const h1 = document.createElement("h1");
  h1.textContent= todo.todo;
-    div.append(h1);
+ const smallBox=document.createElement("div");
+ smallBox.classList.add("circle");
+    div.append(h1, smallBox);
     parent.append(div);
 }
 }
