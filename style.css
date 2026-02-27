@@ -98,3 +98,12 @@ div.circle{
     border: 1px solid black;
     border-radius: 50%;
 }
+div.red{
+    background-color: red;
+}
+div.yellow{
+    background-color: yellow;
+}
+div.green{
+    background-color: green;
+}

@@ -44,6 +44,16 @@ for(let todo of todoList){
  h1.textContent= todo.todo;
  const smallBox=document.createElement("div");
  smallBox.classList.add("circle");
+ if(todo.importance=="important"){
+    smallBox.classList.add("red");
+
+ }
+ else if(todo.importance=="optional"){
+    smallBox.classList.add("yellow");
+ }
+ else{
+    smallBox.classList.add("green");
+ }
     div.append(h1, smallBox);
     parent.append(div);
 }
